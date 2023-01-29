@@ -1,0 +1,38 @@
+name: Deploy to npm
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "package.json"
+
+jobs:
+  # Build the frontend giles
+  build:
+    name: Deploy changes to npm
+
+    runs-on: ubuntu-latest
+
+    steps:
+      # Environment and dependency setup
+      - name: Cloning repository
+        uses: actions/checkout@v1
+
+      - name: Read .nvmrc
+        run: echo "##[set-output name=NVMRC;]$(cat .nvmrc)"
+        id: nvm
+
+      - name: Set Node.js (.nvmrc)
+        uses: actions/setup-node@v1
+        with:
+          node-version: "${{ steps.nvm.outputs.NVMRC }}"
+
+      - name: Install dependencies
+        run: npm i
+
+      - name: "Publish to NPM"
+        run: |
+          npm publish --access public
+        env:
+          NPM_ACCESS_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}

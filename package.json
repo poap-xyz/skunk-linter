@@ -1,0 +1,19 @@
+{
+  "name": "@teamskunk/lint",
+  "version": "0.0.3",
+  "description": "Linting and styleguide for team skunk",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/poap-xyz/skunk-linter.git"
+  },
+  "author": "Mentor <mentor@palokaj.co> (http://github.com/actuallymentor)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/poap-xyz/skunk-linter/issues"
+  },
+  "homepage": "https://github.com/poap-xyz/skunk-linter#readme"
+}
