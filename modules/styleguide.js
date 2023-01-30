@@ -66,7 +66,7 @@ module.exports = {
     "no-extra-parens": "error",
 
     // Regex control character matching, only warn since it is used in the most complete known email regex
-    "no-control-regex": "warn",
+    "no-control-regex": "never",
 
     /* ///////////////////////////////
     // React plugin rules
