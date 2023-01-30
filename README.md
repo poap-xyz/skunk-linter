@@ -6,9 +6,18 @@ A shared set of standards and preferences, enforced through eslint and vscode.
 
 To use:
 
-1. `npm install -D @treamskunk/lint @babel/eslint-parser eslint`
+1. `npm install -D @treamskunk/lint @babel/eslint-parser eslint husky`
 1. Copy `.eslintrc.js` to your project's `.eslintrc.js`
 1. Copy `.vscode/settings.json` to your project's `.vscode/settings.json`
+1. Copy `.husky/pre-commit` to your project's `.husky/pre-commit`
+1. Run husky initial setup:
+
+```shell
+npm pkg set scripts.prepare="husky install"
+npm run prepare
+npx husky add .husky/pre-commit "npm test"
+git add .husky/pre-commit
+```
 
 ## Making changes
 
