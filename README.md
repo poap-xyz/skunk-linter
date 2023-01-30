@@ -14,6 +14,7 @@ To use:
 
 ```shell
 npm pkg set scripts.prepare="husky install"
+npm pkg set scripts.lint="eslint --fix src"
 npm run prepare
 npx husky add .husky/pre-commit "npm test"
 git add .husky/pre-commit
