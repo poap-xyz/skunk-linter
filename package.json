@@ -1,6 +1,6 @@
 {
   "name": "@teamskunk/lint",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Linting and styleguide for team skunk",
   "main": "index.js",
   "scripts": {
