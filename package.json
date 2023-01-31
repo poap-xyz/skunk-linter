@@ -1,6 +1,6 @@
 {
-  "name": "@teamskunk/lint",
-  "version": "0.0.7",
+  "name": "@poap/skunk-linter",
+  "version": "0.0.1",
   "description": "Linting and styleguide for team skunk",
   "main": "index.js",
   "scripts": {
