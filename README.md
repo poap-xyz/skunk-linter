@@ -10,9 +10,18 @@ To use:
 1. Copy `.eslintrc.js` to your project's `.eslintrc.js`
 1. Copy `.vscode/settings.json` to your project's `.vscode/settings.json`
 1. Copy `.husky/pre-commit` to your project's `.husky/pre-commit`
-1. Run husky initial setup:
+1. Run husky initial setup
+
+Lazy shell
 
 ```shell
+npm install -D @poap/skunk-linter @babel/eslint-parser eslint eslint-plugin-react husky
+mkdir .vscode .husky
+touch .eslint .vscode/settings.json .husky/pre-commit
+echo "Now copy the file conts"
+read
+
+chmod ug+x .husky/*
 npm pkg set scripts.prepare="husky install"
 npm pkg set scripts.lint="eslint --fix src"
 npm run prepare
