@@ -17,8 +17,8 @@ Lazy shell
 ```shell
 npm install -D @poap/skunk-linter @babel/eslint-parser eslint eslint-plugin-react husky
 mkdir .vscode .husky
-touch .eslint .vscode/settings.json .husky/pre-commit
-echo "Now copy the file conts"
+touch .eslint.js .vscode/settings.json .husky/pre-commit
+echo "Now copy the file contents"
 read
 
 chmod ug+x .husky/*
