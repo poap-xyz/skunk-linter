@@ -68,6 +68,11 @@ module.exports = {
     // Regex control character matching, only warn since it is used in the most complete known email regex
     "no-control-regex": "off",
 
+    // No unsafe usage
+    "no-unsafe-finally": "error",
+    "no-unsafe-optional-chaining": "error",
+    "no-unsafe-negation": "error",
+
     /* ///////////////////////////////
     // React plugin rules
     // /////////////////////////////*/
