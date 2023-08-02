@@ -8,7 +8,7 @@ on:
       - "package.json"
 
 jobs:
-  # Build the frontend giles
+  # Build the frontend files
   build:
     name: Deploy changes to npm
 
