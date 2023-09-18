@@ -6,7 +6,7 @@ A shared set of standards and preferences, enforced through eslint and vscode.
 
 To use:
 
-1. `npm install -D @poap/skunk-linter @babel/eslint-parser eslint eslint-plugin-react husky`
+1. `npm install -D @poap/skunk-linter @babel/eslint-parser @babel/preset-react eslint eslint-plugin-react husky`
 1. Copy `.eslintrc.js` to your project's `.eslintrc.js`
 1. Copy `.babelrc` to your project's `.babelrc`
 1. Copy `.vscode/settings.json` to your project's `.vscode/settings.json`
@@ -16,7 +16,7 @@ To use:
 Lazy shell
 
 ```shell
-npm install -D @poap/skunk-linter @babel/eslint-parser eslint eslint-plugin-react husky
+npm install -D @poap/skunk-linter @babel/eslint-parser @babel/preset-react eslint eslint-plugin-react husky
 mkdir .vscode .husky
 
 # Download files
